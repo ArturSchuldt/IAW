@@ -1,0 +1,22 @@
+<html>
+<head>
+    <title>Formulario de Correo</title>
+</head>
+<body>
+    <!-- Aqui va a estar el conteido del formulario-->
+    <!-- El atributo action hace referencia a donde / que página se envía
+    la información del formulario -->
+    <!-- El atributo method indica de que metodo se envía la información
+    2 formas get y post-->
+    <form action="procesar.php" method="get">
+        <!-- El atributo name se puede considerar como el nombre de la 
+        variable para nuestro php-->
+        <p>Nombre:<input type="text" name="nombre"/></p>
+        <p>Asunto:<input type="text" name="asunto"/></p>
+        <p>Menasaje:<input type="text" name="mensaje"/></p>
+        <!-- El atrivuto submit desncadena la acción del formularioen este
+        caso enviar la información a la página php "procesar.php"-->
+        <p><input type="submit" value="Enviar"/></p>    
+    </form>
+</body>
+</html>
